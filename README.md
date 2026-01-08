@@ -19,13 +19,13 @@ This project focuses on:
 
 ### Landing Page
 
-![Landing Page](public/screenshots/landing-page.png)
+![Landing Page](client/public/screenshots/landing-page.png)
 
 ---
 
 ### Dashboard
 
-![Dashboard](public/screenshots/dashboard.png)
+![Dashboard](client/public/screenshots/dashboard.png)
 
 
 ## Tech Stack
@@ -119,7 +119,7 @@ Once a lead is synced, the flag is updated to true, ensuring idempotency and gua
 
 ### CRM Sync Output
 
-![CRM Sync](public/screenshots/crm-terminal.png)
+![CRM Sync](client/public/screenshots/crm-terminal.png)
 
 #### Background Task Logic:
 
@@ -144,7 +144,7 @@ Finally, this will ensure that :
 
 ### MongoDB Collection (DataBase)
 
-![MongoDB Data](public/screenshots/mongodb.png)
+![MongoDB Data](client/public/screenshots/mongodb.png)
 
 ### Author & Contact
 
