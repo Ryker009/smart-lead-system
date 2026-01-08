@@ -1,0 +1,42 @@
+.name-input {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  justify-self: center;
+}
+
+.name-input input {
+  padding: 8px;
+  width: 260px;
+  border-radius: 10px;
+  text-align: center;
+  border: 2px solid rgb(194, 194, 194);
+  background-color: rgb(197, 232, 222);
+  color: black;
+}
+
+.name-input input:hover{
+  background-color: rgb(224, 255, 246);
+}
+
+.name-input button {
+  padding: 8px 14px;
+  cursor: pointer;
+  border-radius: 10px;
+  border: 2px solid rgb(194, 194, 194);
+  background-color: rgb(224, 13, 13);
+  color: white;
+}
+
+.name-input button:hover{
+  background-color: rgb(175, 19, 19);
+}
+
+.name-input button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.name-input input:disabled {
+  opacity: 0.7;
+}

@@ -1,0 +1,38 @@
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  color: black;
+  border: 2px solid white;
+  text-align: center;
+}
+
+th, td {
+  border: 1px solid #444;
+  padding: 10px;
+}
+
+th {
+  background: rgb(36, 86, 237);
+  height: 30px;
+  color: wheat;
+  border-bottom: 2px solid white;
+}
+
+
+.verified { background-color: #1ec924; }
+.to-check { background-color: #dddbb5; }
+
+
+@media (max-width: 500px) {
+  .table-wrapper {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  table {
+    min-width: 400px;
+  }
+
+}
