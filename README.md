@@ -50,6 +50,7 @@ This project focuses on:
 
 ## Project Structure (High Level)
 
+```text
 frontend/
 ├── components/
 ├── pages/
@@ -64,6 +65,7 @@ backend/
 ├── services/
 ├── cron/
 └── server.js
+```
 
 ---
 
@@ -121,30 +123,33 @@ Once a lead is synced, the flag is updated to true, ensuring idempotency and gua
 
 #### Background Task Logic:
 
-- Identify leads where:
+- It identifies the leads where: status === "Verified" And synced === false
 
-status === "Verified"
-synced === false
+- It simulate CRM sync by logging like this: [CRM Sync] Sending verified lead {Name} to Sales Team...
 
-- Simulate CRM sync by logging:
+- Then, it Marks the lead as synced: true
 
-[CRM Sync] Sending verified lead {Name} to Sales Team...
-
-- Mark the lead as synced: true
-
-This Gives:
+Finally, this will ensure that :
 - Each verified lead is synced only once
 - No duplicate processing, even if the cron job runs multiple times
 
 #### Why this approach?
 
-Prevents sequential API calls
-Avoids blocking the event loop
-Improves performance for batch inputs
-Ensures scalability and non-blocking execution
+- It prevents sequential API calls
+- It avoids blocking the event loop
+- This helps in, improving the performance for batch inputs
+- It ensures scalability and non-blocking execution
 
 ---
 
 ### MongoDB Collection (DataBase)
 
 ![MongoDB Data](public/screenshots/mongodb.png)
+
+### Author & Contact
+
+```text
+Rakesh Kumar
+9646832910
+Mail - rakesh9803646587@gmail.com
+```
