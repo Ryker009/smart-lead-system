@@ -1,4 +1,4 @@
-const BASE_URL = "http://localhost:5000/api/leads";
+const BASE_URL = "https://smart-lead-system-iufq.onrender.com/api/leads";
 
 export const processNames = async (names) => {
   const res = await fetch(`${BASE_URL}/process`, {
