@@ -146,6 +146,19 @@ Finally, this will ensure that :
 
 ![MongoDB Data](client/public/screenshots/mongodb.png)
 
+## Live URLs
+
+- **Frontend:** [Smart Lead System](https://smart-lead-system-frontend.onrender.com)
+- **Dashboard:** [Dashboard Page](https://smart-lead-system-frontend.onrender.com/dashboard)
+- **Backend API:** [API Base URL](https://smart-lead-system-iufq.onrender.com)
+
+## API Endpoints
+
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| GET | /api/leads/all | Fetch all processed leads |
+| POST | /api/leads/process | Process input names and generate leads |
+
 ### Author & Contact
 
 ```text
